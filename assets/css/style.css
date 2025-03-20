@@ -90,6 +90,7 @@ main {
     background-color:blue;
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto; /* Expands if there's space, won't shrink, starts at content size */
+    margin-top: 47px;
 }
 
 
