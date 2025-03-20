@@ -29,9 +29,19 @@ header {
     box-shadow: 0 2px 2px #3a3a3a;
 }
 
+header a { /* Applies style rule to any 'a' descendant of the header */
+    text-decoration: none; /* Ensures default link style is overwritten */
+    color: inherit; /* Ensures default link color is overwritten by previous code */
+}
+
 h1 {
     font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
 }
+
+
 
 /* Main content */
 main {
@@ -39,6 +49,7 @@ main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto; /* Expands if there's space, won't shrink, starts at content size */
 }
+
 
 
 /* Footer */
