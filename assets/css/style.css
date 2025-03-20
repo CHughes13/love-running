@@ -14,8 +14,8 @@ body {
     min-height: 100vh;
     /* will allow body to stretch larger than the height of the screen when there is enough content on the page that the user needs to scroll */
     display: flex;
-    flex-direction: column;
-    /* elements will still show underneath each other */
+    flex-direction: column; /* elements will still show underneath each other */
+    
     /* Generic project styles */
     color: #3a3a3a;
     font-family: 'Lato', sans-serif;
@@ -26,24 +26,17 @@ header {
     background-color: #ffffff;
     padding: 0 1rem;
     position: fixed;
-    z-index: 99;
-    /* Ensures that header will always be top layer */
-    width: 100%;
-    /* Added this because reverts back to content width when position is changed to fixed */
+    z-index: 99; /* Ensures that header will always be top layer */
+    width: 100%; /* Added this because reverts back to content width when position is changed to fixed */
     box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    /* Shows elements in a row */
+    display: flex; /* Shows elements in a row */
     justify-content: space-between;
-    align-items: baseline;
-    /* Elements show in a line vertically */
+    align-items: baseline; /* Elements show in a line vertically */
 }
 
-header a {
-    /* Applies style rule to any 'a' descendant of the header */
-    text-decoration: none;
-    /* Ensures default link style is overwritten */
-    color: inherit;
-    /* Ensures default link color is overwritten by previous code */
+header a { /* Applies style rule to any 'a' descendant of the header */
+    text-decoration: none; /* Ensures default link style is overwritten */
+    color: inherit; /* Ensures default link color is overwritten by previous code */
 }
 
 h1 {
@@ -70,16 +63,14 @@ h1 {
 
 /* Navbar styles with dropdown toggle */
 nav {
-    position: absolute;
-    /* Takes element outside of the normal page structure */
+    position: absolute; /* Takes element outside of the normal page structure */
     background-color: #ffffff;
     width: 100%;
     left: 0;
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-    top: 100%;
-    /* Tells element to start at bottom of its parent */
+    top: 100%; /* Tells element to start at bottom of its parent */
 }
 
 /* Nav toggle */
