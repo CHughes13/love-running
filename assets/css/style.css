@@ -27,6 +27,9 @@ header {
     z-index: 99; /* Ensures that header will always be top layer */
     width: 100%; /* Added this because reverts back to content width when position is changed to fixed */
     box-shadow: 0 2px 2px #3a3a3a;
+    display: flex; /* Shows elements in a row */
+    justify-content: space-between;
+    align-items: baseline; /* Elements show in a line vertically */
 }
 
 header a { /* Applies style rule to any 'a' descendant of the header */
@@ -65,9 +68,21 @@ nav {
     padding: 0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
+    top: 100%; /* Tells element to start at bottom of its parent */
 }
 
+/* Nav toggle */
+#nav-toggle:checked~nav {
+    display: block;
+}
 
+#nav-toggle {
+    display: none;
+}
+
+.nav-toggle-label {
+    font-size: 2rem;
+}
 
 
 /* Main content */
